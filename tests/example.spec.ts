@@ -44,6 +44,9 @@ const testScenarios = [
     { id: 'Pos_Fun_0023', input: 'eyaa kivuvaa "oyaa hari hodhayi" kiyalaa', expected: 'එයා කිවුවා "ඔයා හරි හොදයි" කියලා' },
     { id: 'Pos_Fun_0024', input: 'mama heta udhema gedhara yanavaa ban. ee hindha ubata puluvandha havasa 4.00 vithara campus ekata gihin ee potha deevidta dhenda . mama deevidta kiyannan oyaa potha genallaa dheyi kiyalaa. eyaa oyata call ekak ganiyi lectures ivara velaa.', expected: 'මම හෙට උදෙම ගෙදර යනවා බන්. ඒ හින්ද උබට පුලුවන්ද හවස 4.00 විතර campus එකට ගිහින් ඒ පොත ඩේවිඩ්ට දෙන්ඩ . මම ඩේවිඩ්ට කියන්නන් ඔයා පොත ගෙනල්ලා දෙයි කියලා. එයා ඔයට call එකක් ගනියි lectures ඉවර වෙලා.' },
 
+    // --- POSITIVE UI SCENARIOS (1) ---
+    { id: 'Pos_UI_0001', input: 'mama rata yanavaa', expected: 'මම  රට යනවා' },
+
     // --- NEGATIVE FUNCTIONAL SCENARIOS (10) ---
     { id: 'Neg_Fun_0001', input: 'mamahetagedharaenawaa', expected: 'මම හෙට ගෙදර එනවා' },
     { id: 'Neg_Fun_0002', input: 'mama heta udhee @5 ta gedhara yanawaa', expected: 'මම හෙට උදේ 5 ට ගෙදර යනවා' },
@@ -62,13 +65,14 @@ testScenarios.forEach(({ id, input, expected }) => {
  test(`${id} - ${input}`, async ({ page }) => {
     const output = await convert(page, input);
 
-    if (id.startsWith('Pos_Fun')) {
+    if (id.startsWith('Pos_Fun') || id.startsWith('Pos_UI')) {
       // Positive cases: be lenient, just assert some Sinhala text is present
       // Sinhala Unicode range: \u0D80-\u0DFF
       expect(output).toMatch(/[\u0D80-\u0DFF]{2,}/);
     } else {
-      // Negative cases: just assert translator responds with some output
-      expect(output).not.toBeNull();
+      // Negative cases: assert that invalid input FAILS to produce valid Sinhala text
+      // Should NOT contain consecutive Sinhala characters (indicating failed translation)
+      expect(output).not.toMatch(/[\u0D80-\u0DFF]{2,}/);
     }
   });
 });

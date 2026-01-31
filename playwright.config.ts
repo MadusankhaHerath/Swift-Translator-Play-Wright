@@ -6,7 +6,7 @@ export default defineConfig({
   use: {
     headless: false, // show browser window so you can see typing
     launchOptions: {
-      slowMo: 50, // slow down actions so typing is visible
+      slowMo: 1000, // slow down actions to 1 second so you can clearly see what's happening
     },
   },
   reporter: [
