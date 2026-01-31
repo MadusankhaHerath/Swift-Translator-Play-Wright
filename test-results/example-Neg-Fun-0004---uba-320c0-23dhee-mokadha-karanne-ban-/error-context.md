@@ -137,7 +137,6 @@
           - img [ref=e154]
         - generic [ref=e156]:
           - generic [ref=e157]: Sinhala
-          - generic [ref=e158]: උබ හෙට උ123දේ මොකද කරන්නේ බන් ?
           - generic [ref=e159]:
             - button "Copy" [ref=e160] [cursor=pointer]:
               - img [ref=e161]
