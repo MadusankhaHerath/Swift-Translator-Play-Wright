@@ -118,26 +118,37 @@
                 - img [ref=e126]
               - button "Redo" [ref=e128] [cursor=pointer]:
                 - img [ref=e129]
-          - textbox "Input Your Singlish Text Here." [active] [ref=e132]: mata mee link ekena mokadha venne kiyala kiyanavaadha https://www.swifttranslator.com/
-          - generic [ref=e133]:
-            - button "Open File" [ref=e134] [cursor=pointer]:
-              - img [ref=e135]
-            - button "Copy" [ref=e137] [cursor=pointer]:
-              - img [ref=e138]
-            - button "Cut" [ref=e140] [cursor=pointer]:
-              - img [ref=e141]
-            - button "Paste" [ref=e143] [cursor=pointer]:
-              - img [ref=e144]
-            - button "Clear" [ref=e146] [cursor=pointer]:
-              - img [ref=e147]
-        - button "Swap Languages" [ref=e150] [cursor=pointer]:
-          - img [ref=e151]
-        - generic [ref=e153]:
-          - generic [ref=e154]: Sinhala
-          - generic [ref=e156]:
-            - button "Copy" [ref=e157] [cursor=pointer]:
-              - img [ref=e158]
-            - button "Clear" [ref=e160] [cursor=pointer]:
-              - img [ref=e161]
-      - button "Clear" [ref=e164] [cursor=pointer]: 🗑️ Clear
+          - generic [ref=e131]:
+            - textbox "Input Your Singlish Text Here." [active] [ref=e132]: mata mee link ekena mokadha venne kiyala kiyanavaadha https://www.swifttranslator.com/
+            - list [ref=e134]:
+              - listitem [ref=e135] [cursor=pointer]: හ්ට්ට්ප්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e136] [cursor=pointer]: හ්ට්ට්ඵ්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e137] [cursor=pointer]: හ්ට්ඨ්ප්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e138] [cursor=pointer]: හ්ට්ඨ්ඵ්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e139] [cursor=pointer]: හ්ඨ්ට්ප්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e140] [cursor=pointer]: හ්ඨ්ට්ඵ්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e141] [cursor=pointer]: හ්ඨ්ඨ්ප්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+              - listitem [ref=e142] [cursor=pointer]: හ්ඨ්ඨ්ඵ්ස://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර.cඔම/
+          - generic [ref=e143]:
+            - button "Open File" [ref=e144] [cursor=pointer]:
+              - img [ref=e145]
+            - button "Copy" [ref=e147] [cursor=pointer]:
+              - img [ref=e148]
+            - button "Cut" [ref=e150] [cursor=pointer]:
+              - img [ref=e151]
+            - button "Paste" [ref=e153] [cursor=pointer]:
+              - img [ref=e154]
+            - button "Clear" [ref=e156] [cursor=pointer]:
+              - img [ref=e157]
+        - button "Swap Languages" [ref=e160] [cursor=pointer]:
+          - img [ref=e161]
+        - generic [ref=e163]:
+          - generic [ref=e164]: Sinhala
+          - generic [ref=e165]: මට මේ link එකෙන මොකද වෙන්නෙ කියල කියනවාද හ්ට්ට්ප්ස්://www.සwඉෆ්ට්ට්‍රන්ස්ලටොර්.com/
+          - generic [ref=e166]:
+            - button "Copy" [ref=e167] [cursor=pointer]:
+              - img [ref=e168]
+            - button "Clear" [ref=e170] [cursor=pointer]:
+              - img [ref=e171]
+      - button "Clear" [ref=e174] [cursor=pointer]: 🗑️ Clear
 ```
